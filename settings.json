@@ -1,0 +1,284 @@
+{
+  /*
+    =============================== editor  ===============================
+  */
+  "editor.fontSize": 19,
+  "editor.lineHeight": 30,
+  "editor.fontFamily": "'Source Code Pro','Fira Code', Consolas, 'Courier New', monospace",
+  "editor.tabCompletion": "on",
+  "editor.wordWrap": "on",
+  "editor.fontLigatures": true, // 黏字設定(如:大於等於>=)，要字體有黏字才會出現黏字
+  "editor.tabSize": 2,
+  "editor.mouseWheelZoom": false,
+  // "editor.detectIndentation": false,
+  // "editor.insertSpaces": false,
+  "editor.cursorStyle": "line",
+  "editor.minimap.enabled": false,
+  // "editor.renderWhitespace": "boundary", // 渲染空格方式，除了一個空格(單字間的)以外都會有小點顯示
+  "highlightLine.borderColor": "darkgreen",
+  "workbench.startupEditor": "none",
+
+  "editor.linkedEditing": true,
+  "editor.parameterHints.enabled": false,
+  "editor.guides.bracketPairs": "active",
+  "editor.bracketPairColorization.enabled": true,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "thunder-client.editorFontSize": 19,
+
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "twig": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          // scope doc: https://www.sublimetext.com/docs/scope_naming.html#entity
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js", //class keyword
+          "entity.other.attribute-name" // html class & css class
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  /*
+    =============================== format & linter ===============================
+  */
+  "eslint.validate": ["vue", "html", "javascript", "typescript"],
+  // 修正 eslint
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+
+  "editor.formatOnSave": true,
+  "formattingToggle.affects": ["editor.formatOnSave"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": false, // required for prettier-eslint extension
+  "editor.formatOnType": false, // required for prettier-eslint extension
+  "editor.formatOnSaveMode": "file", // required for prettier-eslint extension
+  "css.lint.unknownAtRules": "ignore",
+
+  // prittier
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "none",
+  "prettier.arrowParens": "avoid",
+  "prettier.printWidth": 80,
+  "prettier.bracketSpacing": true,
+  "prettier.documentSelectors": ["**/*.astro"],
+
+  "color-highlight.markRuler": false,
+  "color-highlight.markerType": "background",
+  "color-highlight.languages": ["*", "!scss", "!css", "!vue"],
+
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "html.format.wrapAttributes": "force-aligned",
+
+  "[scss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+    // "editor.defaultFormatter": "Wscats.eno"
+  },
+
+  "tailwindcss-highlight.languages": [
+    "html",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "php",
+    "svelte",
+    "astro"
+  ],
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vue.features.codeActions.enable": false,
+
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "svelte.enable-ts-plugin": true,
+  "svelte.plugin.svelte.compilerWarnings": {
+    "a11y-click-events-have-key-events": "ignore"
+  },
+
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "intelephense.format.braces": "psr12",
+  "intelephense.telemetry.enabled": false,
+  "intelephense.completion.triggerParameterHints": true,
+  "intelephense.completion.insertUseDeclaration": true,
+  "intelephense.trace.server": "messages",
+  "intelephense.diagnostics.undefinedClassConstants": false,
+  "intelephense.diagnostics.undefinedFunctions": false,
+  "intelephense.diagnostics.undefinedConstants": false,
+  "intelephense.diagnostics.undefinedProperties": false,
+  "intelephense.diagnostics.undefinedTypes": false,
+  "intelephense.diagnostics.undefinedMethods": false,
+  "outline.collapseItems": "alwaysCollapse",
+
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "window.zoomLevel": 1,
+
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+
+  /*
+    =============================== terminal ===============================
+  */
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  // "terminal.integrated.fontFamily": "SauceCodePro NF",
+  "terminal.integrated.fontFamily": "MesloLGS NF", // font for oh-my-zsh
+  "terminal.integrated.fontSize": 17,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {
+    "terminal.background": "#131212",
+    "terminal.foreground": "#dddad6",
+    "terminal.ansiBlack": "#1D2021",
+    "terminal.ansiBrightBlack": "#665C54",
+    "terminal.ansiBrightBlue": "#0D6678",
+    "terminal.ansiBrightCyan": "#8BA59B",
+    "terminal.ansiBrightGreen": "#237e02",
+    "terminal.ansiBrightMagenta": "#8F4673",
+    "terminal.ansiBrightRed": "#FB543F",
+    "terminal.ansiBrightWhite": "#FDF4C1",
+    "terminal.ansiBrightYellow": "#FAC03B",
+    "terminal.ansiBlue": "#00a1f9",
+    "terminal.ansiCyan": "#8BA59B",
+    "terminal.ansiGreen": "#95C085",
+    "terminal.ansiMagenta": "#8F4673",
+    "terminal.ansiRed": "#FB543F",
+    "terminal.ansiWhite": "#A89984",
+    "terminal.ansiYellow": "#FAC03B"
+  },
+
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu-20.04 (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu-20.04"]
+    }
+  },
+
+  /*
+    =============================== vim ===============================
+  */
+  "vim.highlightedyank.enable": true,
+  "editor.lineNumbers": "relative",
+  "editor.cursorSurroundingLines": 8,
+  "vim.leader": " ",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-d>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    {
+      "before": ["<C-u>"],
+      "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["n"],
+      "after": ["n", "z", "z", "z", "v"]
+    },
+    {
+      "before": ["N"],
+      "after": ["N", "z", "z", "z", "v"]
+    },
+
+    // copy to system clipboard
+    {
+      "before": ["<leader>", "y"],
+      "after": ["\"", "+", "y"]
+    },
+    {
+      "before": ["<leader>", "Y"],
+      "after": ["\"", "+", "Y"]
+    },
+
+    // cut to empty register
+    {
+      "before": ["<leader>", "d"],
+      "after": ["\"", "_", "d"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["<leader>", "y"],
+      "after": ["\"", "+", "y"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "after": ["\"", "_", "d", "P"]
+    }
+  ]
+}
+
