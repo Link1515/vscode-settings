@@ -17,11 +17,14 @@
   // "editor.renderWhitespace": "boundary", // 渲染空格方式，除了一個空格(單字間的)以外都會有小點顯示
   "highlightLine.borderColor": "darkgreen",
   "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "material-icon-theme",
 
   "editor.linkedEditing": true,
   "editor.parameterHints.enabled": false,
   "editor.guides.bracketPairs": "active",
   "editor.bracketPairColorization.enabled": true,
+  "editor.foldingImportsByDefault": true,
   "liveServer.settings.CustomBrowser": "chrome",
   "thunder-client.editorFontSize": 19,
 
@@ -126,6 +129,8 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "vue.codeActions.enabled": false,
+  "vue.inlayHints.optionsWrapper": false,
   "vue.features.codeActions.enable": false,
 
   "[svelte]": {
@@ -157,7 +162,7 @@
   "outline.collapseItems": "alwaysCollapse",
 
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "window.zoomLevel": 1,
 
@@ -165,6 +170,8 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
 
+  "java.debug.settings.hotCodeReplace": "auto",
+  "java.saveActions.organizeImports": true,
   /*
     =============================== terminal ===============================
   */
@@ -173,7 +180,6 @@
   // "terminal.integrated.fontFamily": "SauceCodePro NF",
   "terminal.integrated.fontFamily": "MesloLGS NF", // font for oh-my-zsh
   "terminal.integrated.fontSize": 17,
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
     "terminal.background": "#131212",
     "terminal.foreground": "#dddad6",
@@ -281,4 +287,3 @@
     }
   ]
 }
-
