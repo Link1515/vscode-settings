@@ -1,0 +1,32 @@
+[
+  // copy line easier on linux
+  {
+    "key": "ctrl+shift+down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
+  // quick fix or generate class item (getter, setter, constructor ...)
+  {
+    "key": "alt+.",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+
+  // run code
+  {
+    "key": "alt+r",
+    "command": "code-runner.run",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+r",
+    "command": "java.debug.runJavaFile",
+    "when": "editorTextFocus && editorLangId == 'java'"
+  }
+]
