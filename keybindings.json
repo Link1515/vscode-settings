@@ -1,5 +1,5 @@
 [
-  // copy line easier on linux
+  // move line on linux easier
   {
     "key": "ctrl+shift+down",
     "command": "editor.action.copyLinesDownAction",
@@ -11,11 +11,21 @@
     "when": "editorTextFocus && !editorReadonly"
   },
 
-  // quick fix or generate class item (getter, setter, constructor ...)
+  // quick fix or for class item (getter, setter, constructor ...) generate
   {
     "key": "alt+.",
     "command": "editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "selectNextCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "selectPrevCodeAction",
+    "when": "codeActionMenuVisible"
   },
 
   // run code
@@ -28,5 +38,46 @@
     "key": "alt+r",
     "command": "java.debug.runJavaFile",
     "when": "editorTextFocus && editorLangId == 'java'"
+  },
+
+  // Parameter Hints
+  {
+    "key": "alt+p",
+    "command": "editor.action.triggerParameterHints",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus"
+  },
+  {
+    "key": "escape",
+    "command": "closeParameterHints",
+    "when": "editorFocus && parameterHintsVisible"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "showNextParameterHint",
+    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "showPrevParameterHint",
+    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+  },
+
+  // show hover
+  {
+    "key": "alt+i",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+
+  // quick open select
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
   }
 ]

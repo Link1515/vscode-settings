@@ -17,16 +17,20 @@
   // "editor.renderWhitespace": "boundary", // 渲染空格方式，除了一個空格(單字間的)以外都會有小點顯示
   "highlightLine.borderColor": "darkgreen",
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Default Dark+",
+  "window.menuBarVisibility": "compact",
 
   "editor.linkedEditing": true,
   "editor.parameterHints.enabled": false,
   "editor.guides.bracketPairs": "active",
   "editor.bracketPairColorization.enabled": true,
   "editor.foldingImportsByDefault": true,
-  "liveServer.settings.CustomBrowser": "chrome",
-  "thunder-client.editorFontSize": 19,
+  // "liveServer.settings.CustomBrowser": "brave",
+  // "thunder-client.editorFontSize": 19,
+  "files.associations": {
+    "*.css": "css"
+  },
 
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
@@ -100,14 +104,101 @@
   "color-highlight.markerType": "background",
   "color-highlight.languages": ["*", "!scss", "!css", "!vue"],
 
+  // css property sorting
+  "postcssSorting.config": {
+    "properties-order": [
+      "all",
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "z-index",
+      "display",
+      "flex-direction",
+      "justify-content",
+      "align-items",
+      "place-items",
+      "gap",
+      "grid-template-columns",
+      "float",
+      "clear",
+      "overflow",
+      "overflow-x",
+      "overflow-y",
+      "padding",
+      "padding-top",
+      "padding-right",
+      "padding-bottom",
+      "padding-left",
+      "margin",
+      "margin-top",
+      "margin-right",
+      "margin-bottom",
+      "margin-left",
+      "width",
+      "min-width",
+      "max-width",
+      "height",
+      "min-height",
+      "max-height",
+      "font-size",
+      "font-family",
+      "text-align",
+      "text-justify",
+      "text-indent",
+      "text-overflow",
+      "text-decoration",
+      "letter-spacing",
+      "line-height",
+      "white-space",
+      "color",
+      "background",
+      "background-position",
+      "background-repeat",
+      "background-size",
+      "background-color",
+      "background-clip",
+      "border",
+      "border-style",
+      "border-width",
+      "border-color",
+      "border-top-style",
+      "border-top-width",
+      "border-top-color",
+      "border-right-style",
+      "border-right-width",
+      "border-right-color",
+      "border-bottom-style",
+      "border-bottom-width",
+      "border-bottom-color",
+      "border-left-style",
+      "border-left-width",
+      "border-left-color",
+      "border-radius",
+      "opacity",
+      "filter",
+      "list-style",
+      "outline",
+      "visibility",
+      "box-shadow",
+      "text-shadow",
+      "resize",
+      "transition"
+    ]
+  },
+
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "html.format.wrapAttributes": "force-aligned",
 
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.defaultFormatter": "mrmlnc.vscode-postcss-sorting"
+  },
   "[scss]": {
-    "editor.defaultFormatter": "stylelint.vscode-stylelint"
-    // "editor.defaultFormatter": "Wscats.eno"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   "tailwindcss-highlight.languages": [
@@ -123,6 +214,9 @@
   ],
 
   "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
@@ -164,14 +258,20 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 1,
 
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
 
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
   "java.debug.settings.hotCodeReplace": "auto",
   "java.saveActions.organizeImports": true,
+  "java.codeGeneration.toString.template": "${object.className} {\n  ${member.name()} = ${member.value},\n  ${otherMembers}\n}",
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
   /*
     =============================== terminal ===============================
   */
@@ -262,6 +362,16 @@
     {
       "before": ["<leader>", "d"],
       "after": ["\"", "_", "d"]
+    },
+
+    // to matched tag
+    {
+      "before": ["<leader>", "t", "k"],
+      "after": ["v", "a", "t", "o", "ESC"]
+    },
+    {
+      "before": ["<leader>", "t", "j"],
+      "after": ["v", "a", "t", "ESC"]
     }
   ],
   "vim.visualModeKeyBindings": [
