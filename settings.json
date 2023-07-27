@@ -20,6 +20,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Default Dark+",
   "window.menuBarVisibility": "compact",
+  "window.zoomLevel": 1,
 
   "editor.linkedEditing": true,
   "editor.parameterHints.enabled": false,
