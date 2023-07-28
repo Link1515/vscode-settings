@@ -48,7 +48,10 @@
   },
   {
     "key": "escape",
-    "command": "closeParameterHints",
+    "command": "runCommands",
+    "args": {
+      "commands": ["closeParameterHints", "extension.vim_escape"]
+    },
     "when": "editorFocus && parameterHintsVisible"
   },
   {
