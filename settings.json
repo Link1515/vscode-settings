@@ -10,6 +10,10 @@
   "editor.fontLigatures": true, // 黏字設定(如:大於等於>=)，要字體有黏字才會出現黏字
   "editor.tabSize": 2,
   "editor.mouseWheelZoom": false,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "window.menuBarVisibility": "compact",
+  "window.zoomLevel": 1,
   // "editor.detectIndentation": false,
   // "editor.insertSpaces": false,
   "editor.cursorStyle": "line",
@@ -19,27 +23,21 @@
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Default Dark+",
-  "window.menuBarVisibility": "compact",
-  "window.zoomLevel": 1,
-
   "editor.linkedEditing": true,
   "editor.parameterHints.enabled": false,
   "editor.guides.bracketPairs": "active",
   "editor.bracketPairColorization.enabled": true,
   "editor.foldingImportsByDefault": true,
   // "liveServer.settings.CustomBrowser": "brave",
-  // "thunder-client.editorFontSize": 19,
   "files.associations": {
     "*.css": "css"
   },
-
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "typescript": "typescriptreact",
     "twig": "html"
   },
   "emmet.triggerExpansionOnTab": true,
-
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -77,21 +75,26 @@
   /*
     =============================== format & linter ===============================
   */
-  "eslint.validate": ["vue", "html", "javascript", "typescript"],
+  "eslint.validate": [
+    "vue",
+    "html",
+    "javascript",
+    "typescript"
+  ],
   // 修正 eslint
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
-
   "editor.formatOnSave": true,
-  "formattingToggle.affects": ["editor.formatOnSave"],
+  "formattingToggle.affects": [
+    "editor.formatOnSave"
+  ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": false, // required for prettier-eslint extension
   "editor.formatOnType": false, // required for prettier-eslint extension
   "editor.formatOnSaveMode": "file", // required for prettier-eslint extension
   "css.lint.unknownAtRules": "ignore",
-
   // prittier
   "prettier.semi": false,
   "prettier.singleQuote": true,
@@ -99,12 +102,17 @@
   "prettier.arrowParens": "avoid",
   "prettier.printWidth": 80,
   "prettier.bracketSpacing": true,
-  "prettier.documentSelectors": ["**/*.astro"],
-
+  "prettier.documentSelectors": [
+    "**/*.astro"
+  ],
   "color-highlight.markRuler": false,
   "color-highlight.markerType": "background",
-  "color-highlight.languages": ["*", "!scss", "!css", "!vue"],
-
+  "color-highlight.languages": [
+    "*",
+    "!scss",
+    "!css",
+    "!vue"
+  ],
   // css property sorting
   "postcssSorting.config": {
     "properties-order": [
@@ -188,12 +196,10 @@
       "transition"
     ]
   },
-
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "html.format.wrapAttributes": "force-aligned",
-
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
     // "editor.defaultFormatter": "mrmlnc.vscode-postcss-sorting"
@@ -201,7 +207,6 @@
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   "tailwindcss-highlight.languages": [
     "html",
     "javascript",
@@ -213,21 +218,18 @@
     "svelte",
     "astro"
   ],
-
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "vue.codeActions.enabled": false,
   "vue.inlayHints.optionsWrapper": false,
   "vue.features.codeActions.enable": false,
-
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
@@ -235,11 +237,9 @@
   "svelte.plugin.svelte.compilerWarnings": {
     "a11y-click-events-have-key-events": "ignore"
   },
-
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
-
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
@@ -255,21 +255,23 @@
   "intelephense.diagnostics.undefinedTypes": false,
   "intelephense.diagnostics.undefinedMethods": false,
   "outline.collapseItems": "alwaysCollapse",
-
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
-
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
-
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
   },
   "java.debug.settings.hotCodeReplace": "auto",
   "java.saveActions.organizeImports": true,
   "java.codeGeneration.toString.template": "${object.className} {\n  ${member.name()} = ${member.value},\n  ${otherMembers}\n}",
+  "java.configuration.maven.globalSettings": "/home/link/.maven/apache-maven-3.9.3/conf/settings.xml",
+  "mavenPackageAuto.enable": false,
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
@@ -301,7 +303,6 @@
     "terminal.ansiWhite": "#A89984",
     "terminal.ansiYellow": "#FAC03B"
   },
-
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
       "source": "PowerShell",
@@ -320,10 +321,12 @@
     },
     "Ubuntu-20.04 (WSL)": {
       "path": "C:\\WINDOWS\\System32\\wsl.exe",
-      "args": ["-d", "Ubuntu-20.04"]
+      "args": [
+        "-d",
+        "Ubuntu-20.04"
+      ]
     }
   },
-
   /*
     =============================== vim ===============================
   */
@@ -333,68 +336,191 @@
   "vim.leader": " ",
   "vim.normalModeKeyBindings": [
     {
-      "before": ["<C-d>"],
-      "after": ["<C-d>", "z", "z"]
+      "before": [
+        "<C-d>"
+      ],
+      "after": [
+        "<C-d>",
+        "z",
+        "z"
+      ]
     },
     {
-      "before": ["<C-u>"],
-      "after": ["<C-u>", "z", "z"]
+      "before": [
+        "<C-u>"
+      ],
+      "after": [
+        "<C-u>",
+        "z",
+        "z"
+      ]
     },
     {
-      "before": ["n"],
-      "after": ["n", "z", "z", "z", "v"]
+      "before": [
+        "n"
+      ],
+      "after": [
+        "n",
+        "z",
+        "z",
+        "z",
+        "v"
+      ]
     },
     {
-      "before": ["N"],
-      "after": ["N", "z", "z", "z", "v"]
+      "before": [
+        "N"
+      ],
+      "after": [
+        "N",
+        "z",
+        "z",
+        "z",
+        "v"
+      ]
     },
-
     // copy to system clipboard
     {
-      "before": ["<leader>", "y"],
-      "after": ["\"", "+", "y"]
+      "before": [
+        "<leader>",
+        "y"
+      ],
+      "after": [
+        "\"",
+        "+",
+        "y"
+      ]
     },
     {
-      "before": ["<leader>", "Y"],
-      "after": ["\"", "+", "Y"]
+      "before": [
+        "<leader>",
+        "Y"
+      ],
+      "after": [
+        "\"",
+        "+",
+        "Y"
+      ]
     },
-
     // cut to empty register
     {
-      "before": ["<leader>", "d"],
-      "after": ["\"", "_", "d"]
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "d"
+      ]
     },
-
     // to matched tag
     {
-      "before": ["<leader>", "t", "k"],
-      "after": ["v", "a", "t", "o", "ESC"]
+      "before": [
+        "<leader>",
+        "t",
+        "k"
+      ],
+      "after": [
+        "v",
+        "a",
+        "t",
+        "o",
+        "ESC"
+      ]
     },
     {
-      "before": ["<leader>", "t", "j"],
-      "after": ["v", "a", "t", "ESC"]
+      "before": [
+        "<leader>",
+        "t",
+        "j"
+      ],
+      "after": [
+        "v",
+        "a",
+        "t",
+        "ESC"
+      ]
+    },
+    // switch tabs
+    {
+      "before": [
+        "<C-h>"
+      ],
+      "after": [
+        "g",
+        "T"
+      ]
+    },
+    {
+      "before": [
+        "<C-l>"
+      ],
+      "after": [
+        "g",
+        "t"
+      ]
     }
   ],
   "vim.visualModeKeyBindings": [
     {
-      "before": ["K"],
-      "commands": ["editor.action.moveLinesUpAction"]
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
     },
     {
-      "before": ["J"],
-      "commands": ["editor.action.moveLinesDownAction"]
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
     },
     {
-      "before": ["<leader>", "y"],
-      "after": ["\"", "+", "y"]
+      "before": [
+        "<leader>",
+        "y"
+      ],
+      "after": [
+        "\"",
+        "+",
+        "y"
+      ]
     },
     {
-      "before": ["<leader>", "d"],
-      "after": ["\"", "_", "d"]
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "d"
+      ]
     },
     {
-      "before": ["<leader>", "p"],
-      "after": ["\"", "_", "d", "P"]
+      "before": [
+        "<leader>",
+        "p"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "d",
+        "P"
+      ]
     }
-  ]
+  ],
+  "rsp-ui.enableStartServerOnActivation": [
+    {
+      "id": "redhat.vscode-community-server-connector",
+      "name": "Community Server Connector",
+      "startOnActivation": true
+    }
+  ],
+  "java.debug.settings.showQualifiedNames": false,
+  "java.debug.settings.showStaticVariables": false,
 }
