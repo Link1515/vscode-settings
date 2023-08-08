@@ -10,7 +10,6 @@
     "command": "editor.action.copyLinesUpAction",
     "when": "editorTextFocus && !editorReadonly"
   },
-
   // quick fix or for class item (getter, setter, constructor ...) generate
   {
     "key": "alt+.",
@@ -27,7 +26,6 @@
     "command": "selectPrevCodeAction",
     "when": "codeActionMenuVisible"
   },
-
   // run code
   {
     "key": "alt+r",
@@ -39,7 +37,12 @@
     "command": "java.debug.runJavaFile",
     "when": "editorTextFocus && editorLangId == 'java'"
   },
-
+  // run test
+  {
+    "key": "alt+t",
+    "command": "testing.runAtCursor",
+    "when": "editorTextFocus"
+  },
   // Parameter Hints
   {
     "key": "alt+p",
@@ -50,7 +53,10 @@
     "key": "escape",
     "command": "runCommands",
     "args": {
-      "commands": ["closeParameterHints", "extension.vim_escape"]
+      "commands": [
+        "closeParameterHints",
+        "extension.vim_escape"
+      ]
     },
     "when": "editorFocus && parameterHintsVisible"
   },
@@ -64,14 +70,12 @@
     "command": "showPrevParameterHint",
     "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
   },
-
   // show hover
   {
     "key": "alt+i",
     "command": "editor.action.showHover",
     "when": "editorTextFocus"
   },
-
   // quick open select
   {
     "key": "ctrl+n",
@@ -81,6 +85,11 @@
   {
     "key": "ctrl+p",
     "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.quickPickManyToggle",
     "when": "inQuickOpen"
   }
 ]
