@@ -70,6 +70,27 @@
     "command": "showPrevParameterHint",
     "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
   },
+  // trigger suggest
+  {
+    "key": "alt+p",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "escape",
+    "command": "hideSuggestWidget",
+    "when": "suggestWidgetVisible"
+  },
   // show hover
   {
     "key": "alt+i",
