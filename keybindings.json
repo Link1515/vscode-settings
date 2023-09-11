@@ -106,7 +106,8 @@
   // quick open select
   {
     "key": "ctrl+p",
-    "command": "workbench.action.quickOpen"
+    "command": "workbench.action.quickOpen",
+    "when": "!suggestWidgetVisible && !inQuickOpen && !codeActionMenuVisible && !parameterHintsVisible"
   },
   {
     "key": "ctrl+n",
