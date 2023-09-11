@@ -88,7 +88,13 @@
   },
   {
     "key": "escape",
-    "command": "hideSuggestWidget",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "hideSuggestWidget",
+        "extension.vim_escape"
+      ]
+    },
     "when": "suggestWidgetVisible"
   },
   // show hover
