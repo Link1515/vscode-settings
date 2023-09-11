@@ -96,7 +96,7 @@
   "editor.formatOnSaveMode": "file", // required for prettier-eslint extension
   "css.lint.unknownAtRules": "ignore",
   // prittier
-  "prettier.semi": false,
+  "prettier.semi": true,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "none",
   "prettier.arrowParens": "avoid",
@@ -265,13 +265,18 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "[java]": {
-    "editor.defaultFormatter": "redhat.java"
+    "editor.defaultFormatter": "redhat.java",
+    "editor.tabSize": 4
   },
   "java.debug.settings.hotCodeReplace": "auto",
+  "java.configuration.updateBuildConfiguration": "automatic",
   "java.saveActions.organizeImports": true,
   "java.codeGeneration.toString.template": "${object.className} {\n  ${member.name()} = ${member.value},\n  ${otherMembers}\n}",
   "java.configuration.maven.globalSettings": "/home/link/.maven/apache-maven-3.9.3/conf/settings.xml",
-  "mavenPackageAuto.enable": false,
+  "java.settings.url": "~\\.java\\java.settings",
+  "java.debug.settings.showQualifiedNames": false,
+  "java.debug.settings.showStaticVariables": false,
+  "boot-java.rewrite.reconcile": true,
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
@@ -521,6 +526,16 @@
       "startOnActivation": true
     }
   ],
-  "java.debug.settings.showQualifiedNames": false,
-  "java.debug.settings.showStaticVariables": false,
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[properties]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  }
 }

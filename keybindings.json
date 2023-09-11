@@ -72,7 +72,7 @@
   },
   // trigger suggest
   {
-    "key": "alt+p",
+    "key": "alt+h",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
   },
@@ -104,6 +104,10 @@
     "when": "editorTextFocus"
   },
   // quick open select
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen"
+  },
   {
     "key": "ctrl+n",
     "command": "workbench.action.quickOpenSelectNext",
