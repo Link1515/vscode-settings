@@ -241,19 +241,10 @@
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
   "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    "editor.defaultFormatter": "junstyle.php-cs-fixer"
   },
-  "intelephense.format.braces": "psr12",
-  "intelephense.telemetry.enabled": false,
-  "intelephense.completion.triggerParameterHints": true,
-  "intelephense.completion.insertUseDeclaration": true,
-  "intelephense.trace.server": "messages",
-  "intelephense.diagnostics.undefinedClassConstants": false,
-  "intelephense.diagnostics.undefinedFunctions": false,
-  "intelephense.diagnostics.undefinedConstants": false,
-  "intelephense.diagnostics.undefinedProperties": false,
-  "intelephense.diagnostics.undefinedTypes": false,
-  "intelephense.diagnostics.undefinedMethods": false,
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.config": ".php-cs-fixer.php;.php-cs-fixer.dist.php;.php_cs;.php_cs.dist;~/.php-cs-fixer.php",
   "outline.collapseItems": "alwaysCollapse",
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
