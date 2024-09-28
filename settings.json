@@ -11,8 +11,8 @@
   "editor.tabSize": 2,
   "editor.mouseWheelZoom": false,
   "window.commandCenter": false,
+  "window.titleBarStyle": "custom",
   "workbench.layoutControl.enabled": false,
-  "window.menuBarVisibility": "compact",
   "window.zoomLevel": 1,
   // "editor.detectIndentation": false,
   // "editor.insertSpaces": false,
@@ -23,6 +23,7 @@
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Default Dark+",
+  "workbench.sideBar.location": "right",
   "editor.linkedEditing": true,
   "editor.parameterHints.enabled": false,
   "editor.guides.bracketPairs": "active",
@@ -528,5 +529,5 @@
   },
   "[properties]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  }
+  },
 }
