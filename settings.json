@@ -1,44 +1,32 @@
 {
   /*
-    =============================== editor  ===============================
+    ================================ font =================================
   */
   "editor.fontSize": 19,
   "editor.lineHeight": 30,
   "editor.fontFamily": "'Source Code Pro','Fira Code', Consolas, 'Courier New', monospace",
-  "editor.tabCompletion": "on",
+  /*
+    =============================== editor ===============================
+  */
   "editor.wordWrap": "on",
-  "editor.fontLigatures": true, // 黏字設定(如:大於等於>=)，要字體有黏字才會出現黏字
-  "editor.tabSize": 2,
-  "editor.mouseWheelZoom": false,
-  "window.commandCenter": false,
-  "window.titleBarStyle": "custom",
-  "workbench.layoutControl.enabled": false,
-  "window.zoomLevel": 1,
-  // "editor.detectIndentation": false,
-  // "editor.insertSpaces": false,
-  "editor.cursorStyle": "line",
+  "editor.tabSize": 4,
   "editor.minimap.enabled": false,
-  // "editor.renderWhitespace": "boundary", // 渲染空格方式，除了一個空格(單字間的)以外都會有小點顯示
   "highlightLine.borderColor": "darkgreen",
-  "workbench.startupEditor": "none",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Default Dark+",
-  "workbench.sideBar.location": "right",
   "editor.linkedEditing": true,
   "editor.parameterHints.enabled": false,
   "editor.guides.bracketPairs": "active",
-  "editor.bracketPairColorization.enabled": true,
   "editor.foldingImportsByDefault": true,
-  // "liveServer.settings.CustomBrowser": "brave",
+  "outline.collapseItems": "alwaysCollapse",
   "files.associations": {
-    "*.css": "css"
+    "*.css": "css",
+    "*.factories": "properties"
   },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "typescript": "typescriptreact",
     "twig": "html"
   },
-  "emmet.triggerExpansionOnTab": true,
+  "extensions.autoUpdate": false,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -74,6 +62,21 @@
     ]
   },
   /*
+    ============================== workbench ==============================
+  */
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.sideBar.location": "right",
+  /*
+    ============================== window ==============================
+  */
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 1,
+  /*
     =============================== format & linter ===============================
   */
   "eslint.validate": [
@@ -84,8 +87,8 @@
   ],
   // 修正 eslint
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
   },
   "editor.formatOnSave": true,
   "formattingToggle.affects": [
@@ -103,11 +106,10 @@
   "prettier.arrowParens": "avoid",
   "prettier.printWidth": 80,
   "prettier.bracketSpacing": true,
-  "prettier.documentSelectors": [
-    "**/*.astro"
-  ],
+  // "prettier.documentSelectors": [
+  //   "**/*.astro"
+  // ],
   "color-highlight.markRuler": false,
-  "color-highlight.markerType": "background",
   "color-highlight.languages": [
     "*",
     "!scss",
@@ -198,15 +200,17 @@
     ]
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "html.format.wrapAttributes": "force-aligned",
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-    // "editor.defaultFormatter": "mrmlnc.vscode-postcss-sorting"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "tailwindcss-highlight.languages": [
     "html",
@@ -219,18 +223,20 @@
     "svelte",
     "astro"
   ],
+  "headwind.prependCustomClasses": true,
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "vue.codeActions.enabled": false,
   "vue.inlayHints.optionsWrapper": false,
-  "vue.features.codeActions.enable": false,
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
@@ -245,8 +251,8 @@
     "editor.defaultFormatter": "junstyle.php-cs-fixer"
   },
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.config": ".php-cs-fixer.php;.php-cs-fixer.dist.php;.php_cs;.php_cs.dist;~/.php-cs-fixer.php",
-  "outline.collapseItems": "alwaysCollapse",
+  "php-cs-fixer.config": ".php-cs-fixer.php;.php-cs-fixer.dist.php;.php_cs;.php_cs.dist;~/.php-cs-fixer.php;D:\\php\\.php-cs-fixer.php",
+  "php-cs-fixer.lastDownload": 1729069874746,
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -257,8 +263,7 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "[java]": {
-    "editor.defaultFormatter": "redhat.java",
-    "editor.tabSize": 4
+    "editor.defaultFormatter": "mwpb.java-prettier-formatter",
   },
   "java.debug.settings.hotCodeReplace": "auto",
   "java.configuration.updateBuildConfiguration": "automatic",
@@ -268,9 +273,39 @@
   "java.settings.url": "~\\.java\\java.settings",
   "java.debug.settings.showQualifiedNames": false,
   "java.debug.settings.showStaticVariables": false,
-  "boot-java.rewrite.reconcile": true,
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.maven.downloadSources": true,
+  "java.eclipse.downloadSources": true,
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[properties]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[spring-boot-properties]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "alpine-intellisense.settings.languageScopes": "html,astro",
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
   /*
     =============================== terminal ===============================
@@ -278,8 +313,8 @@
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.defaultProfile.linux": "zsh",
   // "terminal.integrated.fontFamily": "SauceCodePro NF",
-  "terminal.integrated.fontFamily": "MesloLGS NF", // font for oh-my-zsh
-  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.fontFamily": "UbuntuMono Nerd Font", // font for oh-my-zsh
+  "terminal.integrated.fontSize": 19,
   "workbench.colorCustomizations": {
     "terminal.background": "#131212",
     "terminal.foreground": "#dddad6",
@@ -457,6 +492,15 @@
         "g",
         "t"
       ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "l"
+      ],
+      "commands": [
+        "turboConsoleLog.displayLogMessage"
+      ]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -511,23 +555,7 @@
       ]
     }
   ],
-  "rsp-ui.enableStartServerOnActivation": [
-    {
-      "id": "redhat.vscode-community-server-connector",
-      "name": "Community Server Connector",
-      "startOnActivation": true
-    }
-  ],
-  "[dotenv]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "[ignore]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  },
-  "[properties]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  },
+  /*
+    =============================== end ===============================
+  */
 }
