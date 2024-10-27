@@ -61,6 +61,9 @@
       }
     ]
   },
+  "code-runner.executorMap": {
+    "typescript": "deno",
+  },
   /*
     ============================== workbench ==============================
   */
@@ -229,7 +232,8 @@
     "editor.tabSize": 2
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -252,7 +256,7 @@
   },
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
   "php-cs-fixer.config": ".php-cs-fixer.php;.php-cs-fixer.dist.php;.php_cs;.php_cs.dist;~/.php-cs-fixer.php;D:\\php\\.php-cs-fixer.php",
-  "php-cs-fixer.lastDownload": 1729069874746,
+  "php-cs-fixer.lastDownload": 1729675064459,
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -501,6 +505,14 @@
       "commands": [
         "turboConsoleLog.displayLogMessage"
       ]
+    },
+    {
+      "before": [
+        "<C-p>"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -555,6 +567,7 @@
       ]
     }
   ],
+  "codeium.enableCodeLens": false,
   /*
     =============================== end ===============================
   */
