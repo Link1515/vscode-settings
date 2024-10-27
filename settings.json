@@ -505,14 +505,6 @@
       "commands": [
         "turboConsoleLog.displayLogMessage"
       ]
-    },
-    {
-      "before": [
-        "<C-p>"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
     }
   ],
   "vim.visualModeKeyBindings": [
