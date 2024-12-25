@@ -10,12 +10,14 @@
   */
   "editor.wordWrap": "on",
   "editor.tabSize": 4,
+  "editor.stickyScroll.enabled": false,
   "editor.minimap.enabled": false,
   "highlightLine.borderColor": "darkgreen",
   "editor.linkedEditing": true,
   "editor.parameterHints.enabled": false,
   "editor.guides.bracketPairs": "active",
   "editor.foldingImportsByDefault": true,
+  "editor.inlineSuggest.suppressSuggestions": true,
   "outline.collapseItems": "alwaysCollapse",
   "files.associations": {
     "*.css": "css",
@@ -27,6 +29,7 @@
     "twig": "html"
   },
   "extensions.autoUpdate": false,
+  "update.mode": "manual",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -62,8 +65,9 @@
     ]
   },
   "code-runner.executorMap": {
-    "typescript": "deno",
+    "typescript": "deno --allow-all"
   },
+  "codeium.enableCodeLens": false,
   /*
     ============================== workbench ==============================
   */
@@ -78,7 +82,6 @@
   "window.commandCenter": false,
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": 1,
   /*
     =============================== format & linter ===============================
   */
@@ -204,8 +207,10 @@
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.linkedEditing": false
   },
+  "html.autoClosingTags": false,
   "html.format.wrapAttributes": "force-aligned",
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -249,14 +254,15 @@
     "a11y-click-events-have-key-events": "ignore"
   },
   "[astro]": {
-    "editor.defaultFormatter": "astro-build.astro-vscode"
+    "editor.defaultFormatter": "astro-build.astro-vscode",
+    "editor.tabSize": 2
   },
   "[php]": {
     "editor.defaultFormatter": "junstyle.php-cs-fixer"
   },
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
   "php-cs-fixer.config": ".php-cs-fixer.php;.php-cs-fixer.dist.php;.php_cs;.php_cs.dist;~/.php-cs-fixer.php;D:\\php\\.php-cs-fixer.php",
-  "php-cs-fixer.lastDownload": 1729675064459,
+  "php-cs-fixer.lastDownload": 1734586067625,
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -267,7 +273,7 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "[java]": {
-    "editor.defaultFormatter": "mwpb.java-prettier-formatter",
+    "editor.defaultFormatter": "mwpb.java-prettier-formatter"
   },
   "java.debug.settings.hotCodeReplace": "auto",
   "java.configuration.updateBuildConfiguration": "automatic",
@@ -281,7 +287,7 @@
   "java.maven.downloadSources": true,
   "java.eclipse.downloadSources": true,
   "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
+    "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
   },
   "[dotenv]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
@@ -314,11 +320,11 @@
   /*
     =============================== terminal ===============================
   */
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
   "terminal.integrated.defaultProfile.linux": "zsh",
-  // "terminal.integrated.fontFamily": "SauceCodePro NF",
-  "terminal.integrated.fontFamily": "UbuntuMono Nerd Font", // font for oh-my-zsh
-  "terminal.integrated.fontSize": 19,
+  "terminal.integrated.fontFamily.windows": "SauceCodePro Nerd Font Mono", // font for oh-my-posh
+  "terminal.integrated.fontFamily.linux": "SauceCodePro NF", // font for oh-my-zsh
+  "terminal.integrated.fontSize": 18,
   "workbench.colorCustomizations": {
     "terminal.background": "#131212",
     "terminal.foreground": "#dddad6",
@@ -340,6 +346,10 @@
     "terminal.ansiYellow": "#FAC03B"
   },
   "terminal.integrated.profiles.windows": {
+    "Windows PowerShell": {
+      "path": "${env:windir}\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "icon": "terminal-powershell"
+    },
     "PowerShell": {
       "source": "PowerShell",
       "icon": "terminal-powershell"
@@ -558,8 +568,7 @@
         "P"
       ]
     }
-  ],
-  "codeium.enableCodeLens": false,
+  ]
   /*
     =============================== end ===============================
   */
