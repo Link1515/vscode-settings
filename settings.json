@@ -3,7 +3,7 @@
     ================================ font =================================
   */
   "editor.fontSize": 19,
-  "editor.lineHeight": 30,
+  "editor.lineHeight": 31,
   "editor.fontFamily": "'Source Code Pro','Fira Code', Consolas, 'Courier New', monospace",
   /*
     =============================== editor ===============================
@@ -108,8 +108,7 @@
   // prittier
   "prettier.semi": true,
   "prettier.singleQuote": true,
-  "prettier.trailingComma": "none",
-  "prettier.arrowParens": "avoid",
+  "prettier.trailingComma": "all",
   "prettier.printWidth": 80,
   "prettier.bracketSpacing": true,
   // "prettier.documentSelectors": [
@@ -322,8 +321,8 @@
   */
   "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
   "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.fontFamily.windows": "SauceCodePro Nerd Font Mono", // font for oh-my-posh
-  "terminal.integrated.fontFamily.linux": "SauceCodePro NF", // font for oh-my-zsh
+  // "terminal.integrated.fontFamily": "SauceCodePro NF",
+  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono", // font for oh-my-posh
   "terminal.integrated.fontSize": 18,
   "workbench.colorCustomizations": {
     "terminal.background": "#131212",
