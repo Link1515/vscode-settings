@@ -123,5 +123,9 @@
     "key": "ctrl+o",
     "command": "workbench.action.quickPickManyToggle",
     "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "extension.vim_navigateCtrlL"
   }
 ]
