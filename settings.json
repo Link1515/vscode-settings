@@ -82,6 +82,8 @@
   "window.commandCenter": false,
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
+  "window.restoreWindows": "none",
+  "files.hotExit": "off",
   /*
     =============================== format & linter ===============================
   */
