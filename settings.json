@@ -373,6 +373,9 @@
       ]
     }
   },
+  "debug.console.fontFamily": "'Source Code Pro','Fira Code', Consolas, 'Courier New', monospace",
+  "debug.console.fontSize": 15,
+  "debug.console.lineHeight": 28,
   /*
     =============================== vim ===============================
   */
