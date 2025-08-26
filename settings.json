@@ -273,7 +273,8 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "[java]": {
-    "editor.defaultFormatter": "mwpb.java-prettier-formatter"
+    "editor.defaultFormatter": "mwpb.java-prettier-formatter",
+    "editor.tabSize": 4
   },
   "java.debug.settings.hotCodeReplace": "auto",
   "java.configuration.updateBuildConfiguration": "automatic",
@@ -315,7 +316,8 @@
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.tabSize": 4
   },
   /*
     =============================== terminal ===============================
