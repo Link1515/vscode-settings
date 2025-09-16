@@ -26,7 +26,8 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "typescript": "typescriptreact",
-    "twig": "html"
+    "twig": "html",
+    "django-html": "html"
   },
   "extensions.autoUpdate": false,
   "update.mode": "manual",
