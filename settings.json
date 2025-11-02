@@ -2,8 +2,8 @@
   /*
     ================================ font =================================
   */
-  "editor.fontSize": 19,
-  "editor.lineHeight": 31,
+  "editor.fontSize": 18,
+  "editor.lineHeight": 30,
   "editor.fontFamily": "'Source Code Pro','Fira Code', Consolas, 'Courier New', monospace",
   /*
     =============================== editor ===============================
@@ -30,6 +30,7 @@
     "django-html": "html"
   },
   "extensions.autoUpdate": false,
+  "extensions.ignoreRecommendations": true,
   "update.mode": "manual",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -77,6 +78,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Default Dark+",
   "workbench.sideBar.location": "right",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
   /*
     ============================== window ==============================
   */
@@ -111,12 +113,10 @@
   // prittier
   "prettier.semi": true,
   "prettier.singleQuote": true,
-  "prettier.trailingComma": "all",
+  "prettier.trailingComma": "none",
+  "prettier.arrowParens": "avoid",
   "prettier.printWidth": 80,
   "prettier.bracketSpacing": true,
-  // "prettier.documentSelectors": [
-  //   "**/*.astro"
-  // ],
   "color-highlight.markRuler": false,
   "color-highlight.languages": [
     "*",
@@ -262,6 +262,7 @@
   "[php]": {
     "editor.defaultFormatter": "junstyle.php-cs-fixer"
   },
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
   "php-cs-fixer.config": ".php-cs-fixer.php;.php-cs-fixer.dist.php;.php_cs;.php_cs.dist;~/.php-cs-fixer.php;D:\\php\\.php-cs-fixer.php",
   "php-cs-fixer.lastDownload": 1734586067625,
   "[json]": {
@@ -288,6 +289,7 @@
   "java.compile.nullAnalysis.mode": "automatic",
   "java.maven.downloadSources": true,
   "java.eclipse.downloadSources": true,
+  "redhat.telemetry.enabled": false,
   "[xml]": {
     "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
   },
@@ -326,7 +328,7 @@
   "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
   "terminal.integrated.defaultProfile.linux": "zsh",
   // "terminal.integrated.fontFamily": "SauceCodePro NF",
-  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono", // font for oh-my-posh
+  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
   "terminal.integrated.fontSize": 18,
   "workbench.colorCustomizations": {
     "terminal.background": "#131212",
