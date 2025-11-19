@@ -293,6 +293,8 @@
   "java.compile.nullAnalysis.mode": "automatic",
   "java.maven.downloadSources": true,
   "java.eclipse.downloadSources": true,
+  // Java 套件目前要設定 JDK 21 以上才能運行
+  "java.jdt.ls.java.home": "D:\\java\\java-25",
   "redhat.telemetry.enabled": false,
   "[xml]": {
     "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
