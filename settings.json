@@ -331,6 +331,7 @@
   /*
     =============================== terminal ===============================
   */
+  "terminal.integrated.suggest.enabled": false,
   "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
   "terminal.integrated.defaultProfile.linux": "zsh",
   // "terminal.integrated.fontFamily": "SauceCodePro NF",
