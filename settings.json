@@ -78,6 +78,9 @@
   "workbench.colorTheme": "Default Dark+",
   "workbench.sideBar.location": "right",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
   "workbench.editor.enablePreview": false,
   /*
     ============================== window ==============================
