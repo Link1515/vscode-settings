@@ -114,11 +114,11 @@
   "editor.formatOnSaveMode": "file", // required for prettier-eslint extension
   "css.lint.unknownAtRules": "ignore",
   // prittier
-  "prettier.semi": true,
+  "prettier.semi": false,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "none",
   "prettier.arrowParens": "avoid",
-  "prettier.printWidth": 80,
+  "prettier.printWidth": 200,
   "prettier.bracketSpacing": true,
   "color-highlight.markRuler": false,
   "color-highlight.languages": [
