@@ -82,6 +82,7 @@
     "*.svg": "default"
   },
   "workbench.editor.enablePreview": false,
+  "workbench.browser.openLocalhostLinks": false,
   /*
     ============================== window ==============================
   */
