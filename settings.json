@@ -4,7 +4,7 @@
   */
   "editor.fontSize": 19,
   "editor.lineHeight": 31,
-  "editor.fontFamily": "'Source Code Pro','Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "'SauceCodePro Nerd Font Mono','Fira Code', Consolas, 'Courier New', monospace",
   /*
     =============================== editor ===============================
   */
@@ -20,7 +20,8 @@
   "outline.collapseItems": "alwaysCollapse",
   "files.associations": {
     "*.css": "css",
-    "*.factories": "properties"
+    "*.factories": "properties",
+    "*.astro": "astro"
   },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
@@ -28,7 +29,7 @@
     "twig": "html",
     "django-html": "html"
   },
-  "extensions.autoUpdate": false,
+  "extensions.autoUpdate": "off",
   "extensions.ignoreRecommendations": true,
   "update.mode": "manual",
   "editor.tokenColorCustomizations": {
@@ -66,7 +67,7 @@
     ]
   },
   "code-runner.executorMap": {
-    "typescript": "deno --allow-all"
+    "typescript": "deno --allow-all",
   },
   "codeium.enableCodeLens": false,
   /*
@@ -75,19 +76,16 @@
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "Dark+",
   "workbench.sideBar.location": "right",
-  "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.editorAssociations": {
     "*.svg": "default"
   },
-  "workbench.editor.enablePreview": false,
-  "workbench.browser.openLocalhostLinks": false,
+  // "workbench.editor.enablePreview": false,
   /*
     ============================== window ==============================
   */
   "window.commandCenter": false,
-  "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
   "window.restoreWindows": "none",
   "files.hotExit": "off",
@@ -105,7 +103,7 @@
     "source.fixAll.eslint": "explicit",
     "source.fixAll.stylelint": "explicit"
   },
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "formattingToggle.affects": [
     "editor.formatOnSave"
   ],
@@ -117,10 +115,14 @@
   // prittier
   "prettier.semi": false,
   "prettier.singleQuote": true,
-  "prettier.trailingComma": "none",
-  "prettier.arrowParens": "avoid",
+  "prettier.trailingComma": "es5",
   "prettier.printWidth": 200,
+  "prettier.arrowParens": "avoid",
   "prettier.bracketSpacing": true,
+  "prettier.tabWidth": 2,
+  // "prettier.documentSelectors": [
+  //   "**/*.astro"
+  // ],
   "color-highlight.markRuler": false,
   "color-highlight.languages": [
     "*",
@@ -213,12 +215,11 @@
   },
   "[django-html]": {
     "editor.defaultFormatter": "batisteo.vscode-django",
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2,
-    "editor.linkedEditing": false
   },
   "html.autoClosingTags": false,
   "html.format.wrapAttributes": "force-aligned",
@@ -264,15 +265,14 @@
     "a11y-click-events-have-key-events": "ignore"
   },
   "[astro]": {
-    "editor.defaultFormatter": "astro-build.astro-vscode",
-    "editor.tabSize": 2
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // "editor.tabSize": 2
   },
   "[php]": {
     "editor.defaultFormatter": "junstyle.php-cs-fixer"
   },
-  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
   "php-cs-fixer.config": ".php-cs-fixer.php;.php-cs-fixer.dist.php;.php_cs;.php_cs.dist;~/.php-cs-fixer.php;D:\\php\\.php-cs-fixer.php",
-  "php-cs-fixer.lastDownload": 1734586067625,
+  "php-cs-fixer.lastDownload": 1739150675665,
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -283,7 +283,7 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "[java]": {
-    "editor.defaultFormatter": "mwpb.java-prettier-formatter",
+    "editor.defaultFormatter": "redhat.java",
     "editor.tabSize": 4
   },
   "java.debug.settings.hotCodeReplace": "auto",
@@ -297,11 +297,9 @@
   "java.compile.nullAnalysis.mode": "automatic",
   "java.maven.downloadSources": true,
   "java.eclipse.downloadSources": true,
-  // Java 套件目前要設定 JDK 21 以上才能運行
-  "java.jdt.ls.java.home": "D:\\java\\java-25",
   "redhat.telemetry.enabled": false,
   "[xml]": {
-    "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
   },
   "[dotenv]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
@@ -324,6 +322,7 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
+  "python.terminal.activateEnvironment": false,
   "alpine-intellisense.settings.languageScopes": "html,astro",
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
@@ -335,11 +334,10 @@
   /*
     =============================== terminal ===============================
   */
-  "terminal.integrated.suggest.enabled": false,
   "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
   "terminal.integrated.defaultProfile.linux": "zsh",
   // "terminal.integrated.fontFamily": "SauceCodePro NF",
-  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
+  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono", // font for oh-my-posh
   "terminal.integrated.fontSize": 18,
   "workbench.colorCustomizations": {
     "terminal.background": "#131212",
@@ -364,11 +362,11 @@
   "terminal.integrated.profiles.windows": {
     "Windows PowerShell": {
       "path": "${env:windir}\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-      "icon": "terminal-powershell"
+      "icon": "terminal-powershell",
     },
     "PowerShell": {
       "source": "PowerShell",
-      "icon": "terminal-powershell"
+      "icon": "terminal-powershell",
     },
     "Command Prompt": {
       "path": [
@@ -389,9 +387,11 @@
       ]
     }
   },
-  "debug.console.fontFamily": "'Source Code Pro','Fira Code', Consolas, 'Courier New', monospace",
+  "debug.console.fontFamily": "'SauceCodePro Nerd Font Mono','Fira Code', Consolas, 'Courier New', monospace",
   "debug.console.fontSize": 15,
   "debug.console.lineHeight": 28,
+  "gitlens.gitkraken.cli.integration.enabled": false,
+  "gitlens.gitkraken.cli.insiders.enabled": false,
   /*
     =============================== vim ===============================
   */
@@ -587,7 +587,24 @@
         "P"
       ]
     }
-  ]
+  ],
+  "security.workspace.trust.untrustedFiles": "open",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "window.menuBarVisibility": "toggle",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "terminal.integrated.stickyScroll.enabled": false,
+  "[snippets]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "workbench.editor.enablePreview": false,
+  "git.suggestSmartCommit": false,
+  "kotlin.languageServer.enabled": false,
+  "kotlin.debugAdapter.enabled": false,
+  "chat.titleBar.openInAgentsWindow.enabled": false,
+  "terminal.integrated.windowsUseConptyDll": false,
   /*
     =============================== end ===============================
   */
