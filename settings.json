@@ -81,6 +81,8 @@
   "workbench.editorAssociations": {
     "*.svg": "default"
   },
+  "workbench.editor.useModal": "off",
+  "workbench.browser.openLocalhostLinks": false,
   // "workbench.editor.enablePreview": false,
   /*
     ============================== window ==============================
